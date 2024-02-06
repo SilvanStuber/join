@@ -1,12 +1,6 @@
 let draggedElementId;
-let stateOfTask = ["checkbox-1-0", "checkbox-1-1"];
-let subtaskLevel = [
-  {
-    taskId: 1,
-    percentageCompleted: 100,
-    valueOfTheSubtaskBreak: "2/2",
-  },
-];
+let stateOfTask = [];
+let subtaskLevel = [];
 
 /**
  * Initializes the board and performs necessary setup tasks.
