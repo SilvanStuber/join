@@ -4,7 +4,7 @@ let emailRememberMe = [];
 let passwordRememberMe = [];
 let userName = [];
 let initials = [];
-const STORAGE_TOKEN = "AYYO0E5VB3YXDWJPUDKIWLA1EZNYQ7SLYTRZEJTF";
+const STORAGE_TOKEN = "X7DBXKDEU8ISCZXV2D2NCZOTW84Y090L3DMCTF7N";
 const STORAGE_URL = "https://remote-storage.developerakademie.org/item";
 
 /**

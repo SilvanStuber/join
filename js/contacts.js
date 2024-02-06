@@ -1,12 +1,12 @@
 let contacts = [
-  ["Marcel Bauer", "bauer@gmail.com", "+49 8625 946 38 2"],
-  ["Anton Mayer", "antom@gmail.com", "+49 1111 111 11 1"],
-  ["Anja Schulz", "schulz@hotmail.com", "+49 2222 222 22 2"],
-  ["Benedikt Ziegler", "benedikt@gmail.com", "+49 3333 333 33 3"],
-  ["David Eisenberg", "davidberg@gmail.com", "+49 1283 297 48 9"],
-  ["Eva Fischer", "eva@gmail.com", "+49 2825 594 86 7"],
-  ["Emmanuel Mauer", "emmanuelma@gmail.com", "+49 5890 487 38 4"],
-  ["Tatjana Wolf", "wolf@gmail.com", "+49 7362 836 98 1"],
+  ["Marcel Bauer", "bauer@gmail.com", "00418625946382"],
+  ["Anton Mayer", "antom@gmail.com", "00411111111111"],
+  ["Anja Schulz", "schulz@hotmail.com", "00412222222222"],
+  ["Benedikt Ziegler", "benedikt@gmail.com", "00493333333333"],
+  ["David Eisenberg", "davidberg@gmail.com", "00491283297489"],
+  ["Eva Fischer", "eva@gmail.com", "00492825594867"],
+  ["Emmanuel Mauer", "emmanuelma@gmail.com", "00495890487384"],
+  ["Tatjana Wolf", "wolf@gmail.com", "00497362836981"],
 ];
 
 const colors = ["#9227FE", "#3BDBC7", "#FD81FF", "#FFBB2A", "#6E52FF", "#169857", "#6B5E5F", "#FF7915", "#9227FE", "#3BDBC7", "#FD81FF", "#FFBB2A", "#6E52FF", "#169857", "#6B5E5F", "#FF7915"];
