@@ -1,5 +1,5 @@
 /**
- * @returns {string} - Returns the HTML Code for Many Contacts Add Task Board Content
+ * @returns {string} - Returns the HTML Code for Add Task Board Content
  *
  * */
 function generate_addTask(statusFromUser) {
