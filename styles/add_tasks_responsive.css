@@ -1083,6 +1083,10 @@
     left: -98px;
   }
 
+  .contactList {
+    width: 89% !important;
+  }
+
   .custom-checkbox label:before {
     left: 360px;
   }
@@ -1319,6 +1323,10 @@
   .task_succes_container {
     margin-left: 39px;
     margin-top: 139px;
+  }
+
+  .contactList {
+    width: 90% !important;
   }
 
   .custom-checkbox label:before {

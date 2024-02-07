@@ -1,4 +1,4 @@
-@media (min-width:300px) and (max-width:400px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .searchBar {
     width: 98%;
   }
@@ -20,7 +20,6 @@
   .cardA {
     margin: 0;
   }
-
 
   .searchbarIn {
     width: 94%;
@@ -80,7 +79,6 @@
     gap: 9px;
   }
 
-  /* edit */
   .categoryFrame74Board {
     width: 89%;
   }
@@ -127,6 +125,10 @@
     gap: 20px;
   }
 
+  .custom-checkbox-board {
+    font-size: 15px;
+  }
+
   .inputLeft_addTaskBoard {
     width: 100%;
   }
@@ -141,45 +143,44 @@
   }
 
   .custom-checkbox-board label:before {
-    left: 170px;
+    left: 150px !important;
   }
 
-  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked+label:before {
-    left: 170px;
+  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked + label:before {
+    left: 150px !important;
   }
   .circleAvatarBoard {
     width: 32px;
     height: 32px;
   }
-    /* assigned */
-    .contactListSelected {
-      width: 100%;
-      font-size: 10px;
-    }
-  
-    .underListContactBoard {
-      width: 95%;
-      font-size: 10px;
-    }
-  
-    .custom-checkbox-board label:before {
-      left: 185px;
-    }
-  
-    .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked+label:before {
-      left: 185px;
-    }
-    .circleAvatarBoard {
-      width: 32px;
-      height: 32px;
-    }
-    .circleAvatarBoardChecked {
-      margin-left: -30px;
-    }
+
+  .contactListSelected {
+    width: 97%;
+    font-size: 10px;
+  }
+
+  .underListContactBoard {
+    width: 95%;
+    font-size: 10px;
+  }
+
+  .custom-checkbox-board label:before {
+    left: 185px;
+  }
+
+  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked + label:before {
+    left: 185px;
+  }
+  .circleAvatarBoard {
+    width: 32px;
+    height: 32px;
+  }
+  .circleAvatarBoardChecked {
+    margin-left: -30px;
+  }
 }
 
-@media (min-width:400px) and (max-width:450px) {
-
+@media (min-width: 400px) and (max-width: 450px) {
   .searchBar {
     width: 98%;
   }
@@ -201,7 +202,6 @@
   .cardA {
     margin: 0;
   }
-
 
   .searchbarIn {
     width: 94%;
@@ -248,7 +248,6 @@
     width: 80%;
   }
 
-  /* edit */
   .categoryFrame74Board {
     width: 89%;
   }
@@ -295,9 +294,12 @@
     gap: 20px;
   }
 
-  /* assigned */
+  .custom-checkbox-board {
+    font-size: 15px;
+  }
+
   .contactListSelected {
-    width: 100%;
+    width: 97%;
     font-size: 10px;
   }
 
@@ -307,11 +309,11 @@
   }
 
   .custom-checkbox-board label:before {
-    left: 183px;
+    left: 170px;
   }
 
-  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked+label:before {
-    left: 183px;
+  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked + label:before {
+    left: 170px;
   }
   .circleAvatarBoard {
     width: 32px;
@@ -322,8 +324,7 @@
   }
 }
 
-
-@media (min-width:450px) and (max-width:500px) {
+@media (min-width: 450px) and (max-width: 500px) {
   .searchBar {
     width: 98%;
   }
@@ -345,7 +346,6 @@
   .cardA {
     margin: 0;
   }
-
 
   .searchbarIn {
     width: 96%;
@@ -391,7 +391,6 @@
     width: 80%;
   }
 
-  /* edit */
   .categoryFrame74Board {
     width: 89%;
   }
@@ -438,9 +437,12 @@
     gap: 20px;
   }
 
-  /* assigned */
+  .custom-checkbox-board {
+    font-size: 15px;
+  }
+
   .contactListSelected {
-    width: 100%;
+    width: 97%;
   }
 
   .underListContactBoard {
@@ -452,7 +454,7 @@
     left: 177px;
   }
 
-  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked+label:before {
+  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked + label:before {
     left: 177px;
   }
   .circleAvatarBoard {
@@ -464,7 +466,7 @@
   }
 }
 
-@media (min-width:500px) and (max-width:600px) {
+@media (min-width: 500px) and (max-width: 600px) {
   .searchBar {
     width: 98%;
   }
@@ -486,7 +488,6 @@
   .cardA {
     margin: 0;
   }
-
 
   .searchbarIn {
     width: 98%;
@@ -510,6 +511,10 @@
   .searchBoxLeft {
     width: 100%;
     margin-right: 0px;
+  }
+
+  .custom-checkbox-board {
+    font-size: 15px;
   }
 
   .searchBox {
@@ -548,7 +553,6 @@
     width: 360px;
   }
 
-  /* edit */
   .categoryFrame74Board {
     width: 89%;
   }
@@ -577,9 +581,8 @@
     width: 95%;
   }
 
-  /* assigned */
   .contactListSelected {
-    width: 100%;
+    width: 97%;
   }
 
   .underListContactBoard {
@@ -590,16 +593,12 @@
     left: 200px;
   }
 
-  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked+label:before {
+  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked + label:before {
     left: 200px;
   }
 }
 
-
-
-
-@media (min-width:600px) and (max-width:700px) {
-
+@media (min-width: 600px) and (max-width: 700px) {
   .searchBar {
     width: 98%;
   }
@@ -621,7 +620,6 @@
   .cardA {
     margin: 0;
   }
-
 
   .searchbarIn {
     width: 98%;
@@ -667,7 +665,6 @@
     width: 470px;
   }
 
-  /* Edit */
   .categoryFrame74Board {
     width: 89%;
   }
@@ -696,7 +693,6 @@
     width: 95%;
   }
 
-  /* assigned */
   .underListContactBoard {
     width: 357px;
   }
@@ -705,12 +701,12 @@
     left: 250px;
   }
 
-  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked+label:before {
+  .contactListBoard:hover .custom-checkbox-board input[type="checkbox"]:checked + label:before {
     left: 250px;
   }
 }
 
-@media (min-width:700px) and (max-width:800px) {
+@media (min-width: 700px) and (max-width: 800px) {
   .searchBar {
     width: 98%;
   }
@@ -732,7 +728,6 @@
   .cardA {
     margin: 0;
   }
-
 
   .searchbarIn {
     width: 98%;
@@ -769,7 +764,7 @@
   }
 }
 
-@media (min-width:800px) and (max-width:900px) {
+@media (min-width: 800px) and (max-width: 900px) {
   .searchBar {
     width: 98%;
   }
@@ -791,7 +786,6 @@
   .cardA {
     margin: 0;
   }
-
 
   .searchbarIn {
     width: 98%;
@@ -827,13 +821,12 @@
     min-height: 100vh;
   }
 
-  /* edit */
   .BoardcontentTask {
     width: 100%;
   }
 }
 
-@media (min-width:900px) and (max-width:1000px) {
+@media (min-width: 900px) and (max-width: 1000px) {
   .searchBar {
     width: 98%;
   }
@@ -847,7 +840,6 @@
   .cardA {
     margin: 0;
   }
-
 
   .searchbarIn {
     width: 98%;
@@ -876,7 +868,7 @@
   }
 }
 
-@media (min-width:1000px) and (max-width:1120px) {
+@media (min-width: 1000px) and (max-width: 1120px) {
   .searchBar {
     width: 98%;
   }
@@ -908,7 +900,7 @@
   }
 }
 
-@media (min-width:1120px) and (max-width:1320px) {
+@media (min-width: 1120px) and (max-width: 1320px) {
   .searchBar {
     width: 98%;
   }
@@ -937,10 +929,9 @@
     margin: auto;
     padding: 0;
   }
-
 }
 
-@media (min-width:1320px) and (max-width:1520px) {
+@media (min-width: 1320px) and (max-width: 1520px) {
   .searchBar {
     width: 98%;
   }

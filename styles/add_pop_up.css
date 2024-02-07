@@ -1123,7 +1123,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 300px;
+  left: 290px;
 }
 
 .custom-checkbox input[type="checkbox"]:checked + label:before {
@@ -1134,14 +1134,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 300px;
+  left: 290px;
 }
 
 .nameContactWhite {
   color: white;
 }
-
-
 
 .contactList:hover .custom-checkbox input[type="checkbox"]:checked + label:before {
   color: black;
@@ -1155,7 +1153,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 10px;
   height: 49px;
   padding: 7px 16px;
-  width: 92.5%;
+  width: 90% !important;
 }
 
 .contactList:hover {
@@ -1355,20 +1353,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: relative;
   }
 
-
   .inputRight_addTaskPopUp {
     margin-top: -80px;
   }
 
-  .textAddSubtasks  {
+  .textAddSubtasks {
     font-size: 14px;
   }
   .textAddSubtasks {
     width: 150px;
   }
 }
-
-
 
 @media (min-width: 323px) and (max-width: 373px) {
   .circleAvatar {
@@ -1401,7 +1396,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #eeeeee;
     width: 90%;
   }
-
 }
 @media (min-width: 470px) and (max-width: 500px) {
   .custom-checkbox label:before {
@@ -1421,7 +1415,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #eeeeee;
     width: 90%;
   }
-
 }
 @media (min-width: 500px) and (max-width: 560px) {
   .custom-checkbox label:before {
@@ -1441,7 +1434,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #eeeeee;
     width: 91%;
   }
-
 }
 @media (min-width: 560px) and (max-width: 620px) {
   .custom-checkbox label:before {
@@ -1463,12 +1455,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   .contactListSelected {
     background-color: #2a3647;
-    width: 91%;
+    width: 97%;
   }
 }
 @media (min-width: 440px) and (max-width: 620px) {
-
-
   .circleAvatar {
     margin-left: -12px;
   }
@@ -1601,7 +1591,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 508px) {
-
+  .contactList {
+    width: 89% !important;
+  }
+  .custom-checkbox {
+    font-size: 15px;
+}
+.searchContacts {
+  font-size: 14px;
+}
 }
 
 @media (max-width: 498px) {
@@ -1618,6 +1616,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .textContainer_addTask {
     margin-top: 0;
   }
+  .contactList {
+    width: 89% !important;
+  }
 }
 
 @media (max-width: 398px) {
@@ -1629,6 +1630,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media (max-width: 398px) {
   .text_addTask {
     font-size: 29px;
+  }
+  .contactList {
+    width: 89% !important;
   }
 }
 
@@ -1668,6 +1672,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .primary {
     width: 50%;
   }
+  .contactList {
+    width: 85% !important;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 444px) {
@@ -1680,8 +1687,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .popUpContainer {
     margin-right: 40px;
   }
-
-
 }
 
 @media (min-width: 500px) {
