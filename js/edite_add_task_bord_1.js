@@ -129,11 +129,28 @@ function saveEditTaskBoard(taskId) {
   }
   checkboxAddTaskEdit();
   priorityContentArray.unshift(priorityContentBoard);
+  loadNewBoard(taskId, foundTask, status, priorityContentBoard, selectedPriorityIDBoard, category);
+}
+
+/**
+ * Loads a new board based on the specified parameters, handling task assignment and updating the task's status and priority.
+ * If no tasks are currently assigned, it reverts to a previously saved assignment state. It then generates an edited version
+ * of the task with the new parameters, saves the task's completion status based on its priority, and initializes the board state.
+ * 
+ * @param {string} taskId - The unique identifier for the task to be loaded.
+ * @param {object} foundTask - The task object found that needs to be edited.
+ * @param {string} status - The new status to be assigned to the task.
+ * @param {string} priorityContentBoard - Content related to the task's priority on the board.
+ * @param {string} selectedPriorityIDBoard - The ID of the selected priority for the task on the board.
+ * @param {string} category - The category the task belongs to.
+ */
+function loadNewBoard(taskId, foundTask, status, priorityContentBoard, selectedPriorityIDBoard, category) {
   if (!assigned.length) {
     assigned = oldAssigned.slice();
   }
   generateEditedTask(foundTask, taskId, status, selectedPriorityIDBoard, priorityContentBoard, assigned, category);
   saveRevisedTaskCompletion(priorityContentBoard);
+  boardInit();
 }
 
 /**
@@ -268,7 +285,7 @@ function displaySubtasks() {
 function editSub(index) {
   let oldSub = oldSubs[index];
   document.getElementById(`subsTaskEdit${index}`).innerHTML = generateInputEditSubtask(index);
-  document.getElementById(`subtaskEditeBoard${index}`).value = oldSub;
+  document.getElementById(`subtaskEdite${index}`).value = oldSub;
 }
 
 /**
@@ -285,7 +302,7 @@ function deleteSubTaskEdite(index) {
  * @param {number} index - The index of the subtask to be saved.
  */
 function saveEditetSubTask(index) {
-  let newSubtask = document.getElementById(`subtaskEditeBoard${index}`).value;
+  let newSubtask = document.getElementById(`subtaskEdite${index}`).value;
   oldSubs[index] = newSubtask;
   displaySubtasks();
 }
