@@ -8,7 +8,7 @@ let category = [];
 let subtasks = [];
 let subT = [];
 let priorityContentArray = [];
-let currentId = 3;
+let currentId = 5;
 let taskStatus = [];
 let selectedPriorityContent = "";
 let preselectedCategory = "Medium";
@@ -392,4 +392,21 @@ function clearTaskValues() {
   document.getElementById("inputSubtasks").value = "";
   document.getElementById("taskCategory").value = "";
   document.getElementById("searchContacts").value = "";
+}
+
+/**
+ * Changes the border color and displays the field indicator based on the specified selectors.
+ *
+ * @param {string} frameSelector - The selector for the frame element.
+ * @param {string} fieldIndicatorSelector - The selector for the field indicator element.
+ */
+function changeBorderColorAndDisplayField(frameSelector, fieldIndicatorSelector) {
+  const frame = document.querySelector(frameSelector);
+  const fieldIndicator = document.querySelector(fieldIndicatorSelector);
+  if (frame) {
+    frame.style.border = "1px solid #FF8190";
+  }
+  if (fieldIndicator) {
+    fieldIndicator.style.display = "block";
+  }
 }

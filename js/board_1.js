@@ -1,13 +1,13 @@
 let draggedElementId;
-let stateOfTask = ["checkbox-6-1", "checkbox-7-0", "checkbox-7-1"];
+let stateOfTask = ["checkbox-2-0", "checkbox-2-1", "checkbox-3-1"];
 let subtaskLevel = [
   {
-    taskId: 7,
+    taskId: 2,
     percentageCompleted: 100,
     valueOfTheSubtaskBreak: "2/2",
   },
   {
-    taskId: 6,
+    taskId: 3,
     percentageCompleted: 50,
     valueOfTheSubtaskBreak: "1/2",
   },
@@ -16,7 +16,6 @@ let subtaskLevel = [
 /**
  * Initializes the board and performs necessary setup tasks.
  */
-
 async function boardInit() {
   await includeHTML();
   await loadContactsFromServer();

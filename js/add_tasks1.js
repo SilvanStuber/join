@@ -48,7 +48,19 @@ function load() {
   let tasksAsText = localStorage.getItem("tasks");
   let categoryAsText = localStorage.getItem("category");
   let subTAsText = localStorage.getItem("subT");
-  setToVariable(taskStautsAsText, idAsText, titleAsText, descriptionAsText, assignedAsText, dueDateAsText, priorityContentArrayText, subtaskAsText, tasksAsText, categoryAsText, subTAsText);
+  setToVariable(
+    taskStautsAsText,
+    idAsText,
+    titleAsText,
+    descriptionAsText,
+    assignedAsText,
+    dueDateAsText,
+    priorityContentArrayText,
+    subtaskAsText,
+    tasksAsText,
+    categoryAsText,
+    subTAsText
+  );
 }
 
 /**
@@ -66,8 +78,31 @@ function load() {
  * @param {string} categoryAsText - Category data as text from local storage.
  * @param {string} subTAsText - Subtasks data array as text from local storage.
  */
-function setToVariable(taskStautsAsText, idAsText, titleAsText, descriptionAsText, assignedAsText, dueDateAsText, priorityContentArrayText, subtaskAsText, tasksAsText, categoryAsText, subTAsText) {
-  if (taskStautsAsText && idAsText && titleAsText && descriptionAsText && assignedAsText && dueDateAsText && priorityContentArrayText && subtaskAsText && subTAsText && categoryAsText) {
+function setToVariable(
+  taskStautsAsText,
+  idAsText,
+  titleAsText,
+  descriptionAsText,
+  assignedAsText,
+  dueDateAsText,
+  priorityContentArrayText,
+  subtaskAsText,
+  tasksAsText,
+  categoryAsText,
+  subTAsText
+) {
+  if (
+    taskStautsAsText &&
+    idAsText &&
+    titleAsText &&
+    descriptionAsText &&
+    assignedAsText &&
+    dueDateAsText &&
+    priorityContentArrayText &&
+    subtaskAsText &&
+    subTAsText &&
+    categoryAsText
+  ) {
     taskStatus = JSON.parse(taskStautsAsText);
     currentId = JSON.parse(idAsText);
     title = JSON.parse(titleAsText);
@@ -388,4 +423,18 @@ function addSubtasks() {
     updateSubtasksDisplay();
     hideVectorAndImgCheck();
   }
+}
+
+/**
+ * Hides all field indicators except the specified one.
+ *
+ * @param {string} exceptSelector - The selector for the field indicator to be excluded from hiding.
+ */
+function hideFieldIndicatorsExcept(exceptSelector) {
+  const allIndicators = document.querySelectorAll("#titleFieldRequired, #dueDateFieldRequired");
+  allIndicators.forEach((indicator) => {
+    if (indicator !== document.querySelector(exceptSelector)) {
+      indicator.style.display = "none";
+    }
+  });
 }
