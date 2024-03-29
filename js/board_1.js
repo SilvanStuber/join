@@ -148,27 +148,22 @@ function generateSelectedPriorityContent(currenCategory, clonedContentDiv, taskI
  * Deletes a task based on the event triggered by the user.
  * @param {Event} event - The event object triggered by the user.
  */
-function deleteTask(event) {
-  let noteElement = event.target.closest(".largeCardA");
-  if (noteElement) {
-    let parentElement = noteElement.parentElement;
-    let index = Array.from(parentElement.children).indexOf(noteElement);
-    deleteLevelOfSubtask(index);
-    noteElement.remove();
-    title.splice(index, 1);
-    description.splice(index, 1);
-    assigned.splice(index, 1);
-    dueDate.splice(index, 1);
-    prio.splice(index, 1);
-    category.splice(index, 1);
-    subtasks.splice(index, 1);
-    subT.splice(index, 1);
-    priorityContentArray.splice(index, 1);
-    tasks.splice(0, 1);
-    save();
-    updateHtml();
-    closeCard();
-  }
+function deleteTask(id) {
+  let index = validateIndexFromTask(id);
+  deleteLevelOfSubtask(index);
+  title.splice(index, 1);
+  description.splice(index, 1);
+  assigned.splice(index, 1);
+  dueDate.splice(index, 1);
+  prio.splice(index, 1);
+  category.splice(index, 1);
+  subtasks.splice(index, 1);
+  subT.splice(index, 1);
+  priorityContentArray.splice(index, 1);
+  tasks.splice(0, 1);
+  save();
+  updateHtml();
+  closeCard();
 }
 
 /**

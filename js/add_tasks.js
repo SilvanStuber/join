@@ -93,7 +93,6 @@ function renderContactsAddTask(i, contactsList) {
  * @param {HTMLElement} nameElement - The label element for the contact.
  * @param {Event} event - The change event triggered by the checkbox.
  */
-
 function validationContactsChecked(i, liElement, nameElement, event) {
   if (event.target.checked) {
     contactChecked(i, liElement, nameElement);
@@ -121,7 +120,6 @@ function contactChecked(i, liElement, nameElement) {
 /**
  * Clears the input ans displays all contacts.
  */
-
 function clearInputAndDisplayContacts() {
   let input = document.getElementById("searchContacts");
   input.value = "";
@@ -131,7 +129,6 @@ function clearInputAndDisplayContacts() {
 /**
  * Displays all contacts setting their display style to an empty string
  */
-
 function displayAllContacts() {
   let contacts = document.getElementsByClassName("contactList");
   for (let i = 0; i < contacts.length; i++) {
@@ -146,7 +143,6 @@ function displayAllContacts() {
  * @param {HTMLElement} liElement - The list item element representing the contact.
  * @param {HTMLElement} nameElement - The label element for the contact.
  */
-
 function contactNotChecked(i, liElement, nameElement) {
   let index = selectedContacts.indexOf(i);
   if (index > -1) selectedContacts.splice(index, 1);
@@ -392,21 +388,4 @@ function clearTaskValues() {
   document.getElementById("inputSubtasks").value = "";
   document.getElementById("taskCategory").value = "";
   document.getElementById("searchContacts").value = "";
-}
-
-/**
- * Changes the border color and displays the field indicator based on the specified selectors.
- *
- * @param {string} frameSelector - The selector for the frame element.
- * @param {string} fieldIndicatorSelector - The selector for the field indicator element.
- */
-function changeBorderColorAndDisplayField(frameSelector, fieldIndicatorSelector) {
-  const frame = document.querySelector(frameSelector);
-  const fieldIndicator = document.querySelector(fieldIndicatorSelector);
-  if (frame) {
-    frame.style.border = "1px solid #FF8190";
-  }
-  if (fieldIndicator) {
-    fieldIndicator.style.display = "block";
-  }
 }

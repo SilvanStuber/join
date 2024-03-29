@@ -269,7 +269,7 @@ function generateLargeCardHTML(task, className, clonedContentDiv, subsHtml, task
                 
                 <div class="largCardFooter">
                   <div class="largCardButton">
-                  <div class="delete_task" onmouseover="changeImage(true)" onmouseout="changeImage(false)" onclick="deleteTask(event)">
+                  <div class="delete_task" onmouseover="changeImage(true)" onmouseout="changeImage(false)" onclick="deleteTask(${taskId})">
                     <img id="delete-task-image" class="delete-task-bt" src="./assets/img/delete_contacts.png">
                          <p class="delete-task-title" id="delete-task-title">Delete</p>
                     </div>

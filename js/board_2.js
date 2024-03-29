@@ -33,6 +33,7 @@ function closeCard() {
   const largeCardElement = document.getElementById("popUpWindow");
   largeCardElement.style.transform = "translateX(500%)";
   assignedMenuOpen = false;
+  location.reload();
 }
 
 /**
@@ -162,10 +163,8 @@ function notSearchTasks(foundTaskIds) {
   for (let task of tasks) {
     let taskElement = document.getElementById("smallCardId-" + task.id);
     if (foundTaskIds.includes(task.id)) {
-      console.log("Task with ID " + task.id + ": flex");
       taskElement.style.display = "flex";
     } else {
-      console.log("Task with ID " + task.id + ": not");
       taskElement.style.display = "none";
     }
   }
@@ -182,6 +181,7 @@ function closeAddBoard() {
   if (newDivAddTask) {
     addBoard.removeChild(newDivAddTask);
   }
+  location.reload();
 }
 
 /**

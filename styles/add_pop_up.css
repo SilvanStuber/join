@@ -424,8 +424,6 @@ textarea::placeholder {
 
 .inputDatePopUp {
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
   width: 404px;
   height: 24px;
   font-family: "Inter", sans-serif;
@@ -1596,10 +1594,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   .custom-checkbox {
     font-size: 15px;
-}
-.searchContacts {
-  font-size: 14px;
-}
+  }
+  .searchContacts {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 498px) {

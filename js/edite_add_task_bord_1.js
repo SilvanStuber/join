@@ -130,6 +130,7 @@ function saveEditTaskBoard(taskId) {
   checkboxAddTaskEdit();
   priorityContentArray.unshift(priorityContentBoard);
   loadNewBoard(taskId, foundTask, status, priorityContentBoard, selectedPriorityIDBoard, category);
+  location.reload();
 }
 
 /**
@@ -244,9 +245,6 @@ function deleteSubTaskById(id) {
     stateOfTask.splice(index, 1);
     let idAtText = JSON.stringify(stateOfTask);
     localStorage.setItem("id", idAtText);
-    console.log(`Checkbox mit ID ${id} wurde erfolgreich gelöscht.`);
-  } else {
-    console.log(`Checkbox mit ID ${id} wurde nicht gefunden.`);
   }
 }
 
