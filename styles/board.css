@@ -1652,13 +1652,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 8px;
 }
 
+.inputSubtaskEdite {
+  outline: none; 
+  border: none; 
+  width: 100%; 
+  height: 100%;
+}
+
+.inputSubtaskEdite:hover {
+  background-color: #eeeeee;
+}
+
 .iconsContainer {
   display: none;
   align-items: flex-start;
   gap: 4px;
 }
 
-.subtaskItem:hover {
+.subtaskItem:hover, .subtaskItem:hover .inputSubtaskEdite {
   background-color: #eeeeee;
 }
 
